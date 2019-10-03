@@ -1,0 +1,66 @@
+body{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(100,0,0,0.3)), url(../img/banner-bg.jpg) center/cover fixed no-repeat;
+    
+}
+.trueValue{
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.falseValue{
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+.card{
+    height: 33em;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    width: 400px;   
+    border-radius: 30px;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black; 
+    background: rgba(255,255,255,.7);
+    
+}
+
+.btn-facebook{
+    background-color:#3b5998 ;
+}
+.fa-facebook-f, .fa-google-plus-g{
+    font-size: 30px;
+}
+.btn-google{
+    background: #D34836;
+}
+
+
+.input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+}
+.remember input{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+}
+.card-register{
+    height: 35em;
+    display: none;
+}
+.back-home{
+    font-size: 20px;
+    text-align: center ;
+}
+.back-home a{
+    color: #D34836;
+    text-decoration: none;
+}
+

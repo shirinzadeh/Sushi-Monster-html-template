@@ -1,0 +1,676 @@
+/*white* c9c1ac
+red - #d3325f*/
+
+.info{
+    background: #c9c1ac;
+}
+
+body{    
+    font-family: 'Shadows Into Light', cursive;
+    color: #c9c1ac;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(100,0,0,0.3)), url(../img/bg-image.jpg) center/cover fixed no-repeat;
+}
+
+
+.primary-color{
+    color: #d3325f;
+}
+
+.info h3{
+    word-spacing: 0.6rem;
+}
+
+.info a{
+    transition: color 1s ease-in-out; /*transition start slow and end slow*/
+    /* easeinoutdan sora 4s yazsaq, delay olur. yeni mausu ustune getirendenden 4s sora transition basliyir,2s davam edir*/
+}
+
+.info a:hover{
+    color: #242424;
+}
+
+.btn-login{
+    border: 1px solid #606060;
+    border-radius: 3px; 
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem; 
+}
+.a-login{
+    color: #d3325f;
+}
+
+
+
+
+/*########header############*/
+#header{
+    min-height: calc(100vh - 94px); /*100vh butun ekrann olcusu boyda olur sekil,
+                                    yeni sekil info classi qeder asagi dusur,scroll yaranir.
+                                    info classinin uzunlug cixanda tam sehifeni tutur.*/
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(100,0,0,0.5)), url(../img/banner-bg.jpg) ;
+    /*linear-gradient edende  yuxaridan asagiya reng elave edirik
+    rgba-dan evvel to right yazsaq soldan saga dogru reng elave edirik    */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-90{
+    min-height: calc(100vh - 94px);
+}
+
+.banner h1{
+    border-top: 6px dotted #c9c1ac;
+    border-bottom: 6px dotted #c9c1ac;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s; /*sehife yuklenenden 2s sora animation baslayir*/
+    opacity: 0;/*yazmasaq sushimonster animation baslayana qeder gorsenir 
+                opacity 0 yazanda page reload olanda yazi gorsenmir, amma animation bitenden sora da opacity 0 olur yeni ancaq animation davam edende yazi gorsenir*/
+    animation-fill-mode: forwards;/* bunu yazanda text itmir. text stays in the page*/
+}
+
+@keyframes fromLeft{/*0 50 100yazmaq mecbur deyil, istenilen sey olar*/
+    0%{
+        transform: translate(-100px);
+        opacity: 0;/*sushi master dayandogo yer 0 gotursek,-100px 
+                    animation soldan baslyacaq demekdir*/
+    }
+    50%{
+        transform: translate(30px);/*saga dogru hereket edecek*/
+    }
+    100%{
+        transform: translate(0);/*oldugu yere qayidacaq*/
+        opacity: 1;
+    }
+}
+
+.main-btn{
+    color: #d3325f;
+    font-size: 2rem;
+    border: 2px solid #d3325f;
+    transition: all 1s ease-in-out;
+    animation:fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+.main-btn:hover{
+    color: #242424;
+    border: 2px solid #c9c1ac;
+    background: #c9c1ac;
+}
+
+@keyframes fromRight{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translate(-30px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #c9c1ac;
+    border-radius: 10px;
+    transition: all 1s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link:hover{
+    color: #242424;
+}
+
+@keyframes fromBottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@media only screen and (max-width:1440px){
+    .info .info-icons{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 769px){
+    .info{
+        position: relative;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .banner h1{
+        font-size: 60px;
+    }
+    .main-btn{
+        font-size: 1.5rem;
+    }
+    .info .info-icons{
+        font-size: 13px;
+        margin-top:0;
+    }
+    .info h3{
+        display: none;
+    }
+    .list-items{
+        position: absolute;
+        right:20px;
+    }
+}
+
+
+
+/* ############## navbarrr ############# */
+
+.navbar{
+    background: #c9c1ac;
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+
+.navbar-background{
+    padding: 5px 20px;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    transition: all 1s ease;
+}
+.navbar-brand:hover{
+    color: #242424;
+}
+
+.nav-link{
+    color: #242424;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 23px;
+}
+
+.nav-link:hover{
+    color: #d3325f;
+}
+
+.nav-btn{
+    background: transparent;
+    color: #d3325f;
+    border: 2px solid #d3325f;
+    font-size: 23px;
+    transition: all 2s ease;
+}
+.nav-btn:hover{
+    color:#242424;
+    border: 2px solid #2424;
+    transform: rotate(10deg);
+}
+
+.toggler-btn{
+    border: 2px solid #d3325f;
+    padding: 5px;
+    transition: all 2s ease;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #d3325f;
+    transition: all 0.5s ease;/*navbara klikleyende navbarin acilma muddeti*/   
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*######  menu items ########*/
+.item-container{
+    position: relative;
+    /*for the link*/
+    overflow: hidden; 
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 2s ease;
+}
+
+.item-img{
+    transition: all 2s ease;
+}
+
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     /*bu yazilmasa, menu item yazisi sekilin merkezinde olmur. cunki yazinin ozunun de boyutu var*/
+     transform: translate(-50%,-50%);
+     color: #d3325f;
+     font-size: 2rem;
+     border-top: 3px solid #d3325f;
+     border-bottom: 3px solid #d3325f;
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link{
+    opacity: 1;
+}
+
+.item-link:hover{
+    color: #c9c1ac;
+    border: 3px solid #c9c1ac;
+    background: #c9c1ac;
+    color: #242424;
+}
+
+.item-container:hover{
+    outline: 10px solid #d3325f; /* outline verende sekil boyuyende border de boyuyur*/
+    outline-offset: -1.6rem; /* 0.6rem versek border cole dogru, - eded verende iceriye dogru*/
+}
+
+/* ######### menuu ######### */
+#menu{
+    background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../img/banner-bg.jpg) center/cover fixed no-repeat;
+}
+
+.special{
+    border: 3px solid #d3325f;
+    position: relative;
+}
+
+.special-text{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #d3325f;
+    padding: 0 0.4rem;
+}
+
+
+
+.btn-viewmore{
+    width: 10em;
+    background: #d3325f;
+    border-color: #d3325f;
+    
+    
+}
+.btn-viewmore:hover{
+    background: #c9c1ac;
+    color: #242424;
+    border-color: #d3325f;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(14, 13, 13, 0.9);
+  }
+  .menu-col-border{
+    border: 2px solid rgba(14, 13, 13, 0.9);
+    border-top: 0;
+    border-left: 0;
+    border-radius: 5px;
+    box-shadow:20px 20px 50px grey;
+}
+#menu-displaynone{
+    display: none;
+}
+
+/* ########### modal css */
+/* .modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+} */
+.btn-ingredient{
+    border: none;
+    background: none;
+    font-size: 20px;
+    
+}
+.btn-ingredient:hover{
+    text-decoration: underline;
+}
+.modalbox{
+    color: #242424;
+    position: fixed;
+    top: 50%;
+    left: 50%; /*top left corner merkeze dusur*/
+    transform: translate(-50%, -50%) scale(0); /*scalelere display none,siplay not none vermek olardi, amma transition efekti vere bilmek ucun scale yazilir*/
+    transition: 200ms ease-in-out;
+    border:  1px solid black;
+    border-radius: 7px;
+    z-index: 10;
+    background: white;
+    width: 300px;
+    max-width: 80%;
+}
+.modalbox.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#overlay{
+    position: fixed;
+    transition: 200ms ease-in-out;
+     opacity: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*############## about ########## */
+#more{
+    display: none;
+}
+.about-text{
+    background: rgba(234, 237, 238, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+.about-text:hover{
+    background: rgba(255,255,255,0.6);
+    transition: color 1s ease;
+}
+
+.about-pictures{
+    position: relative;
+
+}
+
+.about-image{
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+
+.img-1{
+    left: 10%;
+    top: 0%;
+}
+.img-2{
+    left: 30%;
+    top: 30%;
+    z-index: 1;
+}
+.img-3{
+    left: 50%;
+    top: 55%;
+    z-index: 2;
+
+}
+.img-4{
+    left: 50%;
+    top: 0%;
+}
+.img-5{
+    left: 10%;
+    top: 55%;
+}
+
+.img-1js{
+    left: 10%;
+    top: 17%;
+}
+.img-2js{
+    left: 30%;
+    top: 30%;
+    z-index: 1;
+}
+.img-3js{
+    left: 50%;
+    top: 43%;
+    z-index: 2;
+
+}
+.img-4js{
+    left: 50%;
+    top: 17%;
+}
+.img-5js{
+    left: 10%;
+    top: 43%;
+}
+
+.about-image:hover{
+    outline: 5px solid #d3325f;
+    outline-offset: 0.8rem;
+    transform: scale(1.5) rotate(20deg);
+    z-index: 3;
+    opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+}
+
+/* ########## review ############### */
+.review-item{
+    background: rgba(255,255,255,0.7);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%)
+}
+
+.review-img{
+    width:150px;
+}
+
+/* ########### team ######################## */
+.team-icons a{
+    color: #3b5998;
+    transition: all 1s ease-in-out;
+}
+.team-icons a:hover{
+    color: #242424;
+    transform: translateY(-5px)
+}
+
+/* 
+.team-1{
+    animation: tm1;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tm1{
+    0%{
+        transform: translate(700px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+.team-2{
+    animation: tm2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes tm2{
+    0%{transform: translate(400px); opacity: 0;}
+    100%{transform: translate(0); opacity: 1; }
+}
+.team-3{
+    animation: tm3;
+    animation-delay: 3s;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes tm3{
+    0% { transform: translate(100px); opacity: 0; }
+    100% { transform: translate(0); opacity: 1; }
+} */
+
+
+/*######## contact ##########*/
+.height-60{
+    min-height: 60vh;
+}
+
+#contact .card{
+    background: rgba(255,255,255,0.5);
+    transition: all 2s ease;
+}
+
+#contact .card:hover{
+    background: rgba(255,255,255,0.9);
+}
+
+#contact .card-header{
+    color: #d3325f;
+}
+
+#contact .input-group-text{
+    background: #d3325f;
+    border-color: #d3325f;
+    color: #242424;
+}
+
+#contact .card-input{
+    color: #606060;
+}
+
+#contact .card input::placeholder{
+    color: #606060;
+}
+textarea::placeholder{
+    color: #606060;
+    font-size: 20px;
+}
+
+
+.contact-btn{
+    color: #d3325f;
+    border-color: #d3325f;
+    background: transparent;
+    transition: all 1s ease-in-out;
+}
+
+.contact-btn:hover{
+    background: #c9c1ac;
+    color: #d3325f;
+    border-color: #c9c1ac;
+}
+
+/* ######## footer $#############*/
+#back-to-top{
+    background: #c9c1ac;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+

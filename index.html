@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurant Template</title>
+  <!-- bootstrap css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- aos css -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- main css-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--fontawesome js-->
+  <script src="js/all.js"></script>
+  <!--google font-->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+  <!--magnific popup-->
+  <link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+</head>
+<body>
+
+    <!--social icons-->
+ <!--primary-color iconlara ve kucenin adina verilen class-->
+<div class="container-fluid info p-3" id="top-icons"><!--info butun container ucun yaradilan classdi-->
+  <div class="row">
+    <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+      <div class="info-icons p-2">
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
+        
+      </div>
+      <h3 class="primary-color text-uppercase" > 3567 Constitution Blvd West Valley City, UT 84119</h3>  
+          <button class="btn btn-login text-uppercase text-dark align-items-center" >
+            <i class="text-dark fas fa-sign-in-alt" style="font-size: 20px;"></i> <a href="signup.html" class="a-login">login</a>
+          </button>
+      
+    </div>
+  </div>
+</div>
+  <!--end of social icons-->
+
+  <!--header-->
+  <header id="header">
+    <div class="container">
+      <div class="row header-90 align-items-center "><!--align-items, jusfify flexbox classlaridi-->
+        <div class="col">
+          <div class="banner text-center">
+            <h1 class="display-1 text-capitalize w-50 mx-auto">
+              <small>sushi</small> <strong class="primary-color">Monster</strong>
+            </h1>
+            <a href="" class="btn main-btn my-4 text-capitalize">order online</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <a href="#special-items" class="btn header-link primary-color"><i class="fas fa-arrow-down"></i></a>
+  </header>
+  <!--end of header-->
+
+  <!--navbar-->
+  
+  <nav class="navbar navbar-expand-lg">
+    <a href="#" class="navbar-brand text-uppercase primary-color">sushi monster</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <div class="toggler-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </button>
+
+    <!-- links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="#special-items" class="nav-link text-capitalize">specialItems</a>
+        </li>
+        <li class="nav-item">
+          <a href="#menu" class="nav-link text-capitalize">menu</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link text-capitalize">about</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link text-capitalize">reviews</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team" class="nav-link text-capitalize">team</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link text-capitalize">contact</a>
+        </li>
+      </ul>
+
+      <form class="form-inline d-none d-lg-block mr-5" >
+        <button class="btn nav-btn text-capitalize" type="button" >order online</button>
+      
+      </form>
+    </div>
+  </nav>
+
+
+  <!--end of navbar-->
+  <!-- menu items-->  
+  <section class="py-5" id="special-items">
+    <div class="container my-5">
+      <div class="row parent-container">
+        <!-- menu item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+          <div class="item-container">
+            <img src="img/menuitem1.jpg" class="img-fluid img-thumbnail item-img" alt="menu item">
+            <a href="img/menuitem1.jpg">
+              <h1 class="text-uppercase text-center item-link px-3">menu item</h1>
+            </a>
+          </div>
+        </div>
+        <!-- menu item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+          <div class="item-container">
+            <img src="img/menuitem2.jpg" class="img-fluid img-thumbnail item-img" alt="menu item">
+            <a href="img/menuitem2.jpg">
+              <h1 class="text-uppercase text-center item-link px-3">menu item</h1>
+            </a>
+          </div>
+        </div>
+        <!-- menu item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+          <div class="item-container">
+            <img src="img/menuitem3.jpg" class="img-fluid img-thumbnail item-img" alt="menu item">
+            <a href="img/menuitem3.jpg">
+              <h1 class="text-uppercase text-center item-link px-3">menu item</h1>
+            </a>
+          </div>
+        </div>
+        <!-- menu item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+          <div class="item-container">
+            <img src="img/menuitem4.jpg" class="img-fluid img-thumbnail item-img" alt="menu item">
+            <a href="img/menuitem4.jpg">
+              <h1 class="text-uppercase text-center item-link px-3">menu item</h1>
+            </a>
+          </div>
+        </div>
+        <!-- menu item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+          <div class="item-container">
+            <img src="img/menuitem5.jpg" class="img-fluid img-thumbnail item-img" alt="menu item">
+            <a href="img/menuitem5.jpg">
+              <h1 class="text-uppercase text-center item-link px-3">menu item</h1>
+            </a>
+          </div>
+        </div>
+        <!-- menu item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+          <div class="item-container">
+            <img src="img/menuitem6.jpg" class="img-fluid img-thumbnail item-img" alt="menu item">
+            <a href="img/menuitem6.jpg">
+              <h1 class="text-uppercase text-center item-link px-3">menu item</h1>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- end of menu items-->
+
+
+  <!-- menu section-->
+    <section id="menu" class="py-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 menu-col-border">
+            <!-- title -->
+              <div class="row">
+                <div class="col">
+                  <h1 class="primary-color text-uppercase">soup</h1>
+                </div>
+              </div>
+            <!-- end title-->
+
+            <!--single item-->
+              <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">soup</h2>
+                  <i class="icon-food"></i>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient" >Ingredients</button>
+                  <div class="modalbox " id="modalbox">
+                    <div class="modal-header">
+                      <div class="title">Ingredients</div>
+                      <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">1/2 pound bacon strips, chopped <br>
+                        1/4 cup chopped onion <br>
+                        1-1/2 pounds Yukon Gold potatoes (about 5 medium), peeled and cubed <br>
+                        1 can (14-3/4 ounces) cream-style corn <br>
+                        1 can (12 ounces) evaporated milk <br>
+                        1/4 teaspoon salt <br>
+                        1/4 teaspoon pepper.
+                    </div>
+                  </div>
+                  
+                  <div id="overlay"></div>   
+                </div>
+                <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                </div>
+                
+              </div>
+              <!--end single item-->
+       <!--<h4><a href="" class="text-muted " >Ingredients</a> </h4>-->
+            <!--single item-->
+            <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">soup</h2>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                </div>
+                  <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                  </div>
+                
+                <h3 class="special-text text-capitalize">chef selection</h3>
+
+              </div>
+              <hr>
+            <!--end single item-->
+              
+            <!-- title -->
+            <div class="row">
+                <div class="col">
+                    <h1 class="primary-color text-uppercase">sushi</h1>
+                </div>
+              </div>
+            <!-- end title-->
+            <!--single item-->
+              <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">sushi</h2>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                </div>
+                  <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                  </div>
+                
+              </div>
+            <!--end single item-->
+  
+            <!--single item-->
+            <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">sushi</h2>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                </div>
+                  <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                  </div>
+                
+                <h3 class="special-text text-capitalize">chef selection</h3>
+  
+            </div>
+        <!--end single item-->
+
+          
+
+          </div>
+          
+          <!--end of 1st col-->
+
+          <div class="col-md-4">
+            <!-- title -->
+            <div class="row">
+                <div class="col">
+                  <h1 class="primary-color text-uppercase">sushimi</h1>
+                </div>
+              </div>
+            <!-- end title-->
+
+            <!--single item-->
+            <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">sushimi</h2>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                </div>
+                  <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                  </div>
+                
+                <h3 class="special-text text-capitalize">chef selection</h3>
+
+              </div>
+            <!--end single item-->
+
+
+            <!--single item-->
+              <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">sushimi</h2>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                </div>
+                  <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                  </div>
+                </div> 
+                <hr>
+                
+            <!--end single item-->
+
+            
+
+            <!-- title -->
+          <div class="row">
+              <div class="col">
+                  <h1 class="primary-color text-uppercase">rolls</h1>
+              </div>
+            </div>
+          <!-- end title-->
+
+          <!--single item-->
+          <div class="single-item d-flex justify-content-between my-3 p-3 special">
+              <div class="single-item-text">
+                <h2 class="text-uppercase text-dark">roll</h2>
+                <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+              </div>
+                <div class="single-item-price align-self-end">
+                  <h1 class="text-uppercase text-dark">$10</h1>
+                </div>
+              
+              <h3 class="special-text text-capitalize">chef selection</h3>
+
+            </div>
+          <!--end single item-->
+
+
+          <!--single item-->
+            <div class="single-item d-flex justify-content-between my-3 p-3 ">
+              <div class="single-item-text">
+                <h2 class="text-uppercase text-dark">roll</h2>
+                <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+              </div>
+                <div class="single-item-price align-self-end">
+                  <h1 class="text-uppercase text-dark">$10</h1>
+                </div>
+              
+            </div>
+            <hr>
+          <!--end single item-->          
+          </div>
+
+          <!-- ################# 3rd col menu #################-->
+          <div class="col-md-4 menu-col-border">
+              <!-- title -->
+                <div class="row">
+                  <div class="col">
+                    <h1 class="primary-color text-uppercase">soup</h1>
+                  </div>
+                </div>
+              <!-- end title-->
+  
+              <!--single item-->
+                <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                  <div class="single-item-text">
+                    <h2 class="text-uppercase text-dark">soup</h2>
+                    <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                  </div>
+                    <div class="single-item-price align-self-end">
+                      <h1 class="text-uppercase text-dark">$10</h1>
+                    </div>
+                  
+                </div>
+              <!--end single item-->
+  
+              <!--single item-->
+              <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                  <div class="single-item-text">
+                    <h2 class="text-uppercase text-dark">soup</h2>
+                    <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                  </div>
+                    <div class="single-item-price align-self-end">
+                      <h1 class="text-uppercase text-dark">$10</h1>
+                    </div>
+                  
+                  <h3 class="special-text text-capitalize">chef selection</h3>
+  
+                </div>
+                <hr>
+              <!--end single item-->
+  
+              <!-- title -->
+            <div class="row">
+                <div class="col">
+                    <h1 class="primary-color text-uppercase">sushi</h1>
+                </div>
+              </div>
+            <!-- end title-->
+            <!--single item-->
+              <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">sushi</h2>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                </div>
+                  <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                  </div>
+                
+              </div>
+            <!--end single item-->
+  
+            <!--single item-->
+            <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                <div class="single-item-text">
+                  <h2 class="text-uppercase text-dark">sushi</h2>
+                  <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                </div>
+                  <div class="single-item-price align-self-end">
+                    <h1 class="text-uppercase text-dark">$10</h1>
+                  </div>
+                
+                <h3 class="special-text text-capitalize">chef selection</h3>
+  
+            </div>
+            <hr>
+        <!--end single item-->
+  
+            </div>   
+            
+                              
+        </div>
+        
+        <!--################ 1st row display none ################-->
+        <span id="menu-displaynone">
+            <div class="row">
+                <div class="col-md-4 menu-col-border mt-3">
+                  <!-- title -->
+                    <div class="row">
+                      <div class="col">
+                        <h1 class="primary-color text-uppercase">soup</h1>
+                      </div>
+                    </div>
+                  <!-- end title-->
+      
+                  <!--single item1-->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                      <div class="single-item-text">
+                        <h2 class="text-uppercase text-dark">soup</h2>
+                        <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                      </div>
+                        <div class="single-item-price align-self-end">
+                          <h1 class="text-uppercase text-dark">$10</h1>
+                        </div>
+                        <div id="overlay"></div>
+                      
+                    </div>
+                  <!--end single item1-->
+      
+                  <!--single item2-->
+                  <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                      <div class="single-item-text">
+                        <h2 class="text-uppercase text-dark">soup</h2>
+                        <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                      </div>
+                        <div class="single-item-price align-self-end">
+                          <h1 class="text-uppercase text-dark">$10</h1>
+                        </div>
+                      
+                      <h3 class="special-text text-capitalize">chef selection</h3>
+      
+                    </div>
+                  <!--end single item2-->
+      
+                  <!-- title -->
+                <div class="row">
+                    <div class="col">
+                        <h1 class="primary-color text-uppercase">sushi</h1>
+                    </div>
+                  </div>
+                <!-- end title-->
+                <!--single item-->
+                  <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                    <div class="single-item-text">
+                      <h2 class="text-uppercase text-dark">sushi</h2>
+                      <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                    </div>
+                      <div class="single-item-price align-self-end">
+                        <h1 class="text-uppercase text-dark">$10</h1>
+                      </div>
+                    
+                  </div>
+                <!--end single item-->
+      
+                <!--single item-->
+                <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                    <div class="single-item-text">
+                      <h2 class="text-uppercase text-dark">sushi</h2>
+                      <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                    </div>
+                      <div class="single-item-price align-self-end">
+                        <h1 class="text-uppercase text-dark">$10</h1>
+                      </div>
+                    
+                    <h3 class="special-text text-capitalize">chef selection</h3>
+      
+                </div>
+            <!--end single item-->
+      
+                </div>
+                
+      
+                <!--  ######### 2nd row display none ################-->
+                <div class="col-md-4 mt-3">
+                  <!-- title -->
+                  <div class="row">
+                      <div class="col">
+                        <h1 class="primary-color text-uppercase">sushimi</h1>
+                      </div>
+                    </div>
+                  <!-- end title-->
+      
+                  <!--single item-->
+                  <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                      <div class="single-item-text">
+                        <h2 class="text-uppercase text-dark">sushimi</h2>
+                        <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                      </div>
+                        <div class="single-item-price align-self-end">
+                          <h1 class="text-uppercase text-dark">$10</h1>
+                        </div>
+                      
+                      <h3 class="special-text text-capitalize">chef selection</h3>
+      
+                    </div>
+                  <!--end single item-->
+      
+      
+                  <!--single item-->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                      <div class="single-item-text">
+                        <h2 class="text-uppercase text-dark">sushimi</h2>
+                        <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                      </div>
+                        <div class="single-item-price align-self-end">
+                          <h1 class="text-uppercase text-dark">$10</h1>
+                        </div>
+                      
+                    </div>
+                  <!--end single item-->
+      
+                  
+      
+                  <!-- title -->
+                <div class="row">
+                    <div class="col">
+                        <h1 class="primary-color text-uppercase">rolls</h1>
+                    </div>
+                  </div>
+                <!-- end title-->
+      
+                <!--single item-->
+                <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                    <div class="single-item-text">
+                      <h2 class="text-uppercase text-dark">roll</h2>
+                      <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                    </div>
+                      <div class="single-item-price align-self-end">
+                        <h1 class="text-uppercase text-dark">$10</h1>
+                      </div>
+                    
+                    <h3 class="special-text text-capitalize">chef selection</h3>
+      
+                  </div>
+                <!--end single item-->
+      
+      
+                <!--single item-->
+                  <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                    <div class="single-item-text">
+                      <h2 class="text-uppercase text-dark">roll</h2>
+                      <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                    </div>
+                      <div class="single-item-price align-self-end">
+                        <h1 class="text-uppercase text-dark">$10</h1>
+                      </div>
+                    
+                  </div>
+                <!--end single item-->          
+                </div>
+      
+                <!-- ############## 3rd row display none-->
+                <div class="col-md-4 menu-col-border mt-3 ">
+                    <!-- title -->
+                      <div class="row">
+                        <div class="col">
+                          <h1 class="primary-color text-uppercase">soup</h1>
+                        </div>
+                      </div>
+                    <!-- end title-->
+        
+                    <!--single item-->
+                      <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                        <div class="single-item-text">
+                          <h2 class="text-uppercase text-dark">soup</h2>
+                          <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                        </div>
+                          <div class="single-item-price align-self-end">
+                            <h1 class="text-uppercase text-dark">$10</h1>
+                          </div>
+                        
+                      </div>
+                    <!--end single item-->
+        
+                    <!--single item-->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                        <div class="single-item-text">
+                          <h2 class="text-uppercase text-dark">soup</h2>
+                          <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                        </div>
+                          <div class="single-item-price align-self-end">
+                            <h1 class="text-uppercase text-dark">$10</h1>
+                          </div>
+                        
+                        <h3 class="special-text text-capitalize">chef selection</h3>
+        
+                      </div>
+                    <!--end single item-->
+        
+                    <!-- title -->
+                  <div class="row">
+                      <div class="col">
+                          <h1 class="primary-color text-uppercase">sushi</h1>
+                      </div>
+                    </div>
+                  <!-- end title-->
+                  <!--single item-->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                      <div class="single-item-text">
+                        <h2 class="text-uppercase text-dark">sushi</h2>
+                        <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                      </div>
+                        <div class="single-item-price align-self-end">
+                          <h1 class="text-uppercase text-dark">$10</h1>
+                        </div>
+                      
+                    </div>
+                  <!--end single item-->
+        
+                  <!--single item-->
+                  <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                      <div class="single-item-text">
+                        <h2 class="text-uppercase text-dark">sushi</h2>
+                        <button data-modalbox-target="#modalbox" class="btn-ingredient">Ingredients</button>
+                      </div>
+                        <div class="single-item-price align-self-end">
+                          <h1 class="text-uppercase text-dark">$10</h1>
+                        </div>
+                      
+                      <h3 class="special-text text-capitalize">chef selection</h3>
+                        <div id="overlay"></div>
+                  </div>
+              <!--end single item-->
+        
+                  </div>   
+                                    
+              </div>
+        </span>
+
+        <div class="view-btn">
+            <button  id="toggle-vm" type="button" class="btn btn-viewmore btn-lg d-flex mx-auto justify-content-center">View More</button>
+        </div>
+        
+      </div>
+    </section>
+  <!-- end of menu section-->
+
+
+  <!-- about-->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-4">
+            <h1 class="text-uppercase display-3">about us</h1>
+            <h2 class="text-dark about-text mr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quas accusamus odit quos voluptatum recusanda
+              <span id="dots">...</span> <span id="more">Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. 
+                Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta</span>
+            </h2>            
+            
+          </div>
+          <div class="col-md-6 about-picture my-4 d-none d-lg-block">
+            <img src="img/menuitem1.jpg" alt="menu" class="img-1 img-thumbnail about-image">
+            <img src="img/menuitem2.jpg" alt="menu" class="img-2 img-thumbnail about-image">
+            <img src="img/menuitem3.jpg" alt="menu" class="img-3 img-thumbnail about-image">
+            <img src="img/menuitem4.jpg" alt="menu" class="img-4 img-thumbnail about-image">
+            <img src="img/menuitem5.jpg" alt="menu" class="img-5 img-thumbnail about-image">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  <!-- end about-->
+
+  <!-- reviews-->
+  <section id="reviews" class="py-5">
+    <div id="slider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <!-- carousel item -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="review-item col-lg-10 mx-auto d-flex justify-content-between  py-3">
+                <!--  image  -->
+                <div class="align-self-center ml-3">
+                  <img src="img/customer-1.jpg" alt="" class="rounded-circle review-img">
+                </div>
+                <!-- text -->
+                <div class="review-text px-5">
+                  <h2 class="text-capitalize mb-3 primary-color">customer name</h2>
+                  <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsam?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of carusel item-->
+
+        <!-- carousel item2 -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                <!--  image  -->
+                <div class="align-self-center ml-3">
+                  <img src="img/customer-2.jpg" alt="" class="rounded-circle review-img">
+                </div>
+                <!-- text -->
+                <div class="review-text px-5">
+                  <h2 class="text-capitalize mb-3 primary-color">customer name</h2>
+                  <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsam?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of carusel item2-->
+
+        <!-- carousel item3 -->
+        <div class="carousel-item ">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                <!--  image  -->
+                <div class="align-self-center ml-3">
+                  <img src="img/customer-3.jpg" alt="" class="rounded-circle review-img">
+                </div>
+                <!-- text -->
+                <div class="review-text px-5">
+                  <h2 class="text-capitalize mb-3 primary-color">customer name</h2>
+                  <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsam?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of carusel item3-->
+      </div>
+      <!-- carousel controls-->
+      <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+  <!-- end of reviews -->
+
+  <!-- team -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <div class="row">
+        <!--   team  member1  -->
+        <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
+          <div class="card team-1" data-aos="fade-left" >
+            <img src="img/customer-1.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="card-title">
+                <h1 class="text-capitalize">team member</h1>
+              </div>
+              <h4 class="primary-color text-capitalize">chef</h4>
+            </div>
+            <div class="card-footer team-icons d-flex justify-content-between">
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              
+            </div>
+          </div>
+        </div>
+        <!--  end team member1  -->
+
+        <!--   team  member2  -->
+        <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
+          <div class="card" data-aos="fade-left">
+            <img src="img/customer-2.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="card-title">
+                <h1 class="text-capitalize">team member</h1>
+              </div>
+              <h4 class="primary-color text-capitalize">chef</h4>
+            </div>
+            <div class="card-footer team-icons d-flex justify-content-between">
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              
+            </div>
+          </div>
+        </div>
+        <!--  end team member2  -->
+
+        <!--   team  member3  -->
+        <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
+          <div class="card " data-aos="fade-right">
+            <img src="img/customer-3.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="card-title">
+                <h1 class="text-capitalize">team member</h1>
+              </div>
+              <h4 class="primary-color text-capitalize">chef</h4>
+            </div>
+            <div class="card-footer team-icons d-flex justify-content-between">
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              
+            </div>
+          </div>
+        </div>
+        <!--  end team member3  -->
+
+        <!-- team member 4-->
+        <div class="col-9 col-sm-6 col-lg-3 mx-auto my-4">
+            <div class="card " data-aos="fade-right">
+              <img src="img/customer-3.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <div class="card-title">
+                  <h1 class="text-capitalize">team member</h1>
+                </div>
+                <h4 class="primary-color text-capitalize">chef</h4>
+              </div>
+              <div class="card-footer team-icons d-flex justify-content-between">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                
+              </div>
+            </div>
+          </div>
+          <!-- end team member 4-->
+      </div>
+    </div>
+  </section>
+  <!-- end team -->
+
+  <!-- contact -->
+    <section id="contact">
+      <div class="container-fluid no-padding">
+        <div class="row">
+          <div class="col-md-6 my-3 ">
+            <div class="embed-responsive embed-responsive-21by9 height-60">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d777908.2954320662!2d49.29589456782376!3d40.39324629532752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2sBaku%2C+Azerbaijan!5e0!3m2!1sen!2s!4v1564244291390!5m2!1sen!2s" width="100%"  frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6 my-3 align-self-center">
+            <div class="card text-center " >
+              <div class="card-header text-uppercase">
+                <h1>contact list</h1>                
+              </div>
+              <div class="card-body">
+                <form >
+                  <!--input group1-->
+                  <div class="input-group my-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="input-text">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </div>
+                    <input type="text" id="text" class="form-control form-control-lg " placeholder="enter your name" required>
+                  </div>
+
+                  <!--input group2-->
+                  <div class="input-group my-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="input-phone">
+                        <i class="fas fa-phone"></i>
+                      </span>
+                    </div>
+                    <input type="number" id="phone" class="form-control form-control-lg " placeholder="enter your phone" required >
+                  </div>
+
+                  <!--input group3-->
+                  <div class="input-group my-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="input-email">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                    <input type="email" id="email" class="form-control form-control-lg " placeholder="enter your email" required >
+                  </div>
+                  
+                  <div class="form-group">                                       
+                    <textarea class="form-control" id="comment" placeholder="Your message" rows="3" ></textarea>
+                  </div>
+
+                  <button id="contactbtn" type="submit" class="btn btn-block btn-lg text-uppercase contact-btn"><i class="far fa-hand-point-right mr-2"></i>click here</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+<!-- end contact -->
+
+<div class="container-fluid info p-3"><!--info butun container ucun yaradilan classdi-->
+  <div class="row">
+    <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+      <div class="info-icons p-2">
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+
+      <h3 class="primary-color p-2 text-capitalize">&copy;copyright 2019</h3>
+    </div>
+  </div>
+
+</div>
+
+<a href="#top-icons" id="back-to-top" class="p-1"><i class="fas fa-arrow-up primary-color fa-3x"></i></a>
+
+
+
+
+
+
+  <!-- jquery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--ripple-->
+  <script src="js/jquery.ripples-min.js"></script>
+  <!-- magnific popup-->
+  <script src="magnificpopup/jquery.magnific-popup.js"></script>
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+      easing: 'ease-out-back',
+      delay: 600,
+      once: true,
+      disable: 'mobile',
+
+    });
+  </script>
+  <!-- js -->
+  <script src="js/script.js"></script>
+
+  
+  
+</body>
+</html>
